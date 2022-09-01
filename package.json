@@ -1,0 +1,67 @@
+{
+	"name": "@mypreview/gallery-thumbnails-block",
+	"version": "1.0.0",
+	"private": true,
+	"homepage": "https://github.com/mypreview/gallery-thumbnails-block#readme",
+	"bugs": {
+		"url": "https://github.com/mypreview/gallery-thumbnails-block/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mypreview/gallery-thumbnails-block.git"
+	},
+	"license": "GPL-3.0-or-later",
+	"author": "Mahdi Yazdani",
+	"scripts": {
+		"archive": "npm run prepare && rm -rf $npm_package_name && composer archive --file=$npm_package_name --format=zip",
+		"build": "wp-scripts build",
+		"dev": "wp-scripts start",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:css-fix": "wp-scripts lint-style --fix",
+		"lint:js": "wp-scripts lint-js",
+		"lint:js-fix": "wp-scripts lint-js --fix",
+		"lint:php": "composer lint:php",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"lint:wpcs": "composer lint:wpcs",
+		"lint:wpcs-fix": "composer lint:wpcbf",
+		"makepot": "composer make-pot",
+		"packages-update": "wp-scripts packages-update",
+		"prepare": "npm run format && npm run lint:css-fix && npm run lint:js-fix && npm run lint:wpcs-fix && npm run build"
+	},
+	"lint-staged": {
+		"*.{scss,css}": [
+			"npm run lint:css"
+		],
+		"*.{js,ts,tsx}": [
+			"npm run format"
+		],
+		"*.php": [
+			"npm run lint:wpcs"
+		]
+	},
+	"dependencies": {
+		"@mypreview/unicorn-js-upsell": "1.0.1",
+		"@mypreview/unicorn-js-utils": "1.4.0",
+		"@mypreview/unicorn-react-components": "1.6.0",
+		"@mypreview/unicorn-react-hooks": "1.3.0",
+		"@splidejs/react-splide": "0.7.8",
+		"@splidejs/splide": "4.0.7",
+		"classnames": "2.3.1",
+		"lodash": "4.17.21",
+		"prop-types": "15.8.1"
+	},
+	"devDependencies": {
+		"@emotion/babel-plugin-jsx-pragmatic": "0.2.0",
+		"@emotion/babel-preset-css-prop": "11.10.0",
+		"@emotion/react": "11.10.4",
+		"@emotion/styled": "11.10.4",
+		"@wordpress/scripts": "24.0.0",
+		"husky": "8.0.1",
+		"license-webpack-plugin": "4.0.2",
+		"lint-staged": "13.0.3",
+		"prettier": "npm:wp-prettier@2.6.2",
+		"webpack-notifier": "1.15.0",
+		"webpack-rtl-plugin": "2.0.0"
+	}
+}
