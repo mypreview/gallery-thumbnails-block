@@ -53,7 +53,7 @@
          Multiple valid text domains can be provided as a comma-delimited list. -->
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="gallery-thumbnails-block" />
+            <property name="text_domain" type="array" value="gallery-thumbnails" />
         </properties>
     </rule>
     <!-- Set the minimum supported WP version. This is used by several sniffs.
@@ -75,10 +75,9 @@
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
             <property name="prefixes" type="array">
+                <element value="gallery_thumbnails" />
                 <element value="gallery_thumbnails_block" />
                 <element value="Gallery_Thumbnails_Block" />
-                <element value="GALLERY_THUMBNAILS_BLOCK" />
-                <element value="mypreview_gallery_thumbnails_block" />
             </property>
         </properties>
     </rule>
