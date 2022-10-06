@@ -1,0 +1,100 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+@import "~@mypreview/unicorn-style-utils/src/mixins";
+@import "~@splidejs/splide/css";
+
+.splide__track--nav {
+
+	> .splide__list {
+		gap: 12px;
+
+		> .splide__slide {
+			position: relative;
+			border-width: 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&::after {
+
+				@include square(100%);
+				@include transition(opacity);
+				content: "";
+				left: 0;
+				top: 0;
+				background: rgba(0, 0, 0, 0.3);
+				opacity: 0;
+				position: absolute;
+			}
+
+			&:hover,
+			&.is-active {
+				border-width: 0;
+
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.wp-block-mypreview-gallery-thumbnails {
+
+	[class*="wp-block-"] {
+		max-width: 100%;
+	}
+
+	figure {
+		margin: 0;
+	}
+
+	.splide__list {
+		align-items: flex-start;
+	}
+
+	.splide__track {
+
+		@include transition(height);
+
+		&--nav {
+
+			img {
+
+				@include square(100%);
+				object-fit: cover;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.splide__arrows {
+		opacity: 0;
+
+		@include transition(opacity);
+	}
+
+	.splide__arrow {
+		background: #fff;
+	}
+
+	.splide--nav {
+
+		&:hover {
+
+			.splide__arrows {
+				opacity: 1;
+			}
+		}
+	}
+
+	.splide--slide {
+		margin-top: 12px;
+	}
+
+}
