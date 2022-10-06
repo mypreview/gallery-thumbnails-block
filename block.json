@@ -2,37 +2,16 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"attributes": {
+		"align": {
+			"default": "wide",
+			"type": "string"
+		},
 		"ids": {
 			"default": [],
 			"type": "array"
 		},
 		"images": {
 			"default": [],
-			"query": {
-				"alt": {
-					"attribute": "alt",
-					"default": "",
-					"selector": "img",
-					"source": "attribute"
-				},
-				"caption": {
-					"selector": "figcaption",
-					"source": "html",
-					"type": "string"
-				},
-				"id": {
-					"attribute": "data-id",
-					"selector": "img",
-					"source": "attribute"
-				},
-				"url": {
-					"attribute": "src",
-					"selector": "img",
-					"source": "attribute"
-				}
-			},
-			"selector": ".carousel-cell",
-			"source": "query",
 			"type": "array"
 		},
 		"sizeSlug": {
@@ -46,11 +25,11 @@
 	"name": "mypreview/gallery-thumbnails",
 	"style": "file:./build/style-index.css",
 	"supports": {
-		"align": true,
+		"align": [ "wide", "full" ],
 		"anchor": true,
 		"html": false
 	},
-	"textdomain": "gallery-thumbnails-block",
+	"textdomain": "gallery-thumbnails",
 	"title": "Gallery Thumbnails",
 	"viewScript": "file:./build/view.js"
 }
