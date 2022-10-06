@@ -56,8 +56,5 @@ jobs:
                   composer install --prefer-dist --no-suggest --no-progress --no-ansi --no-interaction
                   echo "${PWD}/vendor/bin" >> $GITHUB_PATH
 
-            - name: Log WPCS debug information
-              run: phpcs -i
-
             - name: Run WPCS on all files
-              run: composer lint:wpcs -q -n --report=checkstyle
+              run: composer lint:wpcs
