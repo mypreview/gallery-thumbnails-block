@@ -23,23 +23,17 @@ export default Object.freeze( {
 			pagination: false,
 			perMove: 1,
 			perPage: 1,
-			type: 'loop',
+			type: 'fade',
 		},
 		thumbs: {
-			breakpoints: {
-				768: {
-					fixedWidth: 180,
-					fixedHeight: 96,
-				},
-			},
+			gap: 6,
 			cover: true,
 			dragMinThreshold: {
 				mouse: 4,
 				touch: 10,
 			},
-			fixedHeight: 70,
 			fixedWidth: 144,
-			focus: 'left',
+			fixedHeight: 80,
 			isNavigation: true,
 			pagination: false,
 			rewind: true,
