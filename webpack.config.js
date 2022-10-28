@@ -25,7 +25,7 @@ module.exports = {
 			},
 		} ),
 		new WebpackNotifierPlugin( {
-			title: 'Flash Form',
+			title: 'Gallery Thumbnails',
 			emoji: true,
 			alwaysNotify: true,
 			skipFirstNotification: true,

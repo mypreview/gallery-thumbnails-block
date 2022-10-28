@@ -3,7 +3,7 @@
  */
 import { jsonify } from '@mypreview/unicorn-js-utils';
 import Splide from '@splidejs/splide';
-import { forEach, isNumber } from 'lodash';
+import { forEach } from 'lodash';
 
 /**
  * WordPress dependencies
@@ -37,14 +37,9 @@ const galleryThumbnails = {
 			const thumbs = new Splide( $thumbs, jsonify( $thumbs.dataset?.options ) );
 
 			main.sync( thumbs );
-			main.mount().on( 'active resized', ( index ) => galleryThumbnails.adaptiveHeight( index, main ) );
+			main.mount();
 			thumbs.mount();
-			galleryThumbnails.adaptiveHeight( undefined, main );
 		} );
-	},
-	adaptiveHeight( index, $instance ) {
-		const $elm = $instance.Components.Slides.getAt( isNumber( index ) ? index : $instance.index ).slide;
-		$elm.parentElement.parentElement.style.height = $elm.offsetHeight + 'px';
 	},
 };
 
