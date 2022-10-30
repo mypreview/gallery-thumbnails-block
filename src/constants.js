@@ -33,7 +33,6 @@ export default Object.freeze( {
 				touch: 10,
 			},
 			fixedWidth: 144,
-			fixedHeight: 80,
 			isNavigation: true,
 			pagination: false,
 			rewind: true,
