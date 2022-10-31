@@ -1,0 +1,6 @@
+{
+	"core": "WordPress/WordPress#6.0.2",
+	"phpVersion": "8.0",
+	"plugins": [ "." ],
+	"themes": [ "mypreview/siuy" ]
+}
