@@ -1,6 +1,6 @@
 === Gallery Thumbnails Block ===
 Contributors: mahdiyazdani, mypreview, gookaani
-Tags:
+Tags: gallery, photo gallery, image gallery, slider
 Donate link: https://www.buymeacoffee.com/mahdiyazdani
 Requires at least: 5.5
 Tested up to: 6.1
