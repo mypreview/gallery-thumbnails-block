@@ -22,18 +22,26 @@ Description
 * WordPress version 5.5 or greater.
 
 = Automatic installation =
-
 Automatic installation is the easiest option — WordPress will handle the file transfer, and you won’t need to leave your web browser. To do an automatic install of the plugin, log in to your WordPress dashboard, navigate to the Plugins menu, and click “Add New.”
 
 In the search field type “Gallery Thumbnails Block”, then click “Search Plugins.” Once you’ve found the plugin, you can view details about it such as the point release, rating, and description. Click “Install Now,” and WordPress will take it from there.
 
 = Manual installation =
-
 The manual installation method requires downloading the plugin and uploading it to your webserver via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](https://wordpress.org/support/article/managing-plugins/#manual-plugin-installation "Manual plugin installation").
 
 = Updating =
-
 Automatic updates should work smoothly, but we still recommend you back up your site.
+
+== Frequently Asked Questions ==
+= How do I contribute to this plugin? =
+We welcome contributions in any form, and you can help report, test, and detail bugs.
+
+Here’s the [GitHub development repository &#8594;](https://github.com/mypreview/gallery-thumbnails-block "GitHub development repository")
+
+= I need help customizing this plugin? =
+Get free of charge advice on what could be done or how complex different approaches are.
+
+[Start a consultation &#8594;](https://mahdiyazdani.com "Mahdi Yazdani’s personal website")
 
 == Screenshots ==
 1. Block settings.
