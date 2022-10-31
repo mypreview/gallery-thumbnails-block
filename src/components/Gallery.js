@@ -41,7 +41,7 @@ function Gallery( props ) {
 			<Slider
 				options={ Constants.OPTIONS.thumbs }
 				ref={ thumbsRef }
-				aria-label={ __( 'The carousel with thumbnails. Selecting a thumbnail will change the main carousel', 'gallery-thumbnails' ) }
+				aria-label={ __( 'The carousel with thumbnails. Selecting a thumbnail will change the main carousel', 'gallery-thumbnails-block' ) }
 			>
 				<Slides { ...props } />
 			</Slider>

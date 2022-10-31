@@ -10,11 +10,11 @@ import { __ } from '@wordpress/i18n';
  */
 export default Object.freeze( {
 	MESSAGES: {
-		edit: __( 'Edit', 'gallery-thumbnails' ),
-		instructions: __( 'Drag images, upload new ones or select files from your library.', 'gallery-thumbnails' ),
-		permission: __( 'To edit the media file, you need permission to upload media.', 'gallery-thumbnails' ),
-		title: __( 'Gallery', 'gallery-thumbnails' ),
-		upload: __( 'Upload an image', 'gallery-thumbnails' ),
+		edit: __( 'Edit', 'gallery-thumbnails-block' ),
+		instructions: __( 'Drag images, upload new ones or select files from your library.', 'gallery-thumbnails-block' ),
+		permission: __( 'To edit the media file, you need permission to upload media.', 'gallery-thumbnails-block' ),
+		title: __( 'Gallery', 'gallery-thumbnails-block' ),
+		upload: __( 'Upload an image', 'gallery-thumbnails-block' ),
 	},
 	OPTIONS: {
 		main: {

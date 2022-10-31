@@ -38,7 +38,7 @@ function save( { attributes } ) {
 			</Slider>
 			<Slider
 				isSave
-				aria-label={ __( 'The carousel with thumbnails. Selecting a thumbnail will change the main carousel', 'gallery-thumbnails' ) }
+				aria-label={ __( 'The carousel with thumbnails. Selecting a thumbnail will change the main carousel', 'gallery-thumbnails-block' ) }
 				data-options={ stringify( Constants.OPTIONS.thumbs ) }
 			>
 				<Slides className={ className } images={ images } isSave wrapperClassName={ wrapperClassName } />
