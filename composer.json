@@ -62,7 +62,7 @@
 	"scripts": {
 		"lint:wpcbf": "phpcbf --extensions=php -p --runtime-set testVersion 7.4-",
 		"lint:wpcs": "phpcs --extensions=php -s -p --runtime-set testVersion 7.4-",
-		"make-pot": "wp i18n make-pot . languages/gallery-thumbnails.pot --exclude=build"
+		"make-pot": "wp i18n make-pot . languages/gallery-thumbnails-block.pot --exclude=build"
 	},
 	"type": "wordpress-plugin"
 }
